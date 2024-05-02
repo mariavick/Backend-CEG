@@ -1,4 +1,4 @@
-// import { getAllUsers } from "../controllers/users.controller.js";
+// import { getAllUsers } from "../controllers/User.controller.js";
 import { UserModel } from "../models/User.models.js"
 
 export class UserService {
