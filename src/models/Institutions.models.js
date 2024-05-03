@@ -16,13 +16,13 @@ const InstitutionModel = database.define('Institution', {
         type: DataTypes.STRING(50),
         allowNull: false
     },
-    capacity_students:{
-        type:DataTypes.STRING(50),
-        allowNull:false
+    capacity_students: {
+        type: DataTypes.STRING(50),
+        allowNull: false
     },
-    institution_price:{
-        type:DataTypes.STRING(50),
-        allowNull:false
+    institution_price: {
+        type: DataTypes.STRING(50),
+        allowNull: false
     }
 });
 

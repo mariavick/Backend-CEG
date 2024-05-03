@@ -1,6 +1,6 @@
 export const SUCCESS = {
-    DELETED: "Usuário deletado"}
+    DELETED: "deletado."}
 
 export const ERRORS = {
-    NOT_FOUND:"Usuario não encontrado"
+    NOT_FOUND:"não encontrado."
 } 
