@@ -1,8 +1,7 @@
-// import { getAllUsers } from "../controllers/User.controller.js";
 import { UserModel } from "../models/User.models.js"
 
 export class UserService {
-    async createUserService( name, email, password ) {
+    async createUserService(name, email, password) {
         try {
             await UserModel.sync();
             const userAlreadyExist = await UserModel.findOne({
@@ -12,7 +11,7 @@ export class UserService {
             });
 
             if (userAlreadyExist) {
-                return `Usuario já existe`;
+                return `Usuário já existe`;
             }
 
             const newUser = await UserModel.create({
@@ -20,10 +19,10 @@ export class UserService {
             });
             return newUser;
         } catch (error) {
-                return error;
+            return error;
         }
     }
-    async getAllUserService(){
-            return await UserModel.findAll();
+    async getAllUserService() {
+        return await UserModel.findAll();
     }
 }

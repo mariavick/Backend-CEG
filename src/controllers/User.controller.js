@@ -5,7 +5,7 @@ import { SUCCESS, ERRORS } from "../utils/response.js";
 const instanceServiceUser = new UserService();
 
 const createUser = async (req, res) => {
-    const { name, email, password} = req.body;
+    const { name, email, password } = req.body;
     const newUser = await instanceServiceUser.createUserService(name, email, password);
     return res
         .status(201)
@@ -40,7 +40,7 @@ const updatePassword = async (req, res) => {
 
     const userAlreadyExist = await UserModel.findOne({
         where: {
-            id:id
+            id: id
         }
     });
 

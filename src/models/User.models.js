@@ -16,9 +16,9 @@ const UserModel = database.define('User', {
         type: DataTypes.STRING(50),
         allowNull: false
     },
-    password:{
-        type:DataTypes.STRING(20),
-        allowNull:false
+    password: {
+        type: DataTypes.STRING(20),
+        allowNull: false
     }
 });
 
